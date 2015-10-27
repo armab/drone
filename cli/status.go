@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/codegangsta/cli"
-	"github.com/drone/drone/client"
+	"github.com/armab/drone/client"
 )
 
 // NewStatusCommand returns the CLI command for "status".

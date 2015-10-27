@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 )
 
 type CommitService struct {

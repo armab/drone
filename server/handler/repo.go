@@ -6,11 +6,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/drone/drone/plugin/remote"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
-	"github.com/drone/drone/shared/sshutil"
+	"github.com/armab/drone/plugin/remote"
+	"github.com/armab/drone/server/datastore"
+	"github.com/armab/drone/shared/httputil"
+	"github.com/armab/drone/shared/model"
+	"github.com/armab/drone/shared/sshutil"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

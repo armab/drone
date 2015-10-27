@@ -1,17 +1,17 @@
 package deploy
 
 import (
-	"github.com/drone/drone/plugin/condition"
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/repo"
+	"github.com/armab/drone/plugin/condition"
+	"github.com/armab/drone/shared/build/buildfile"
+	"github.com/armab/drone/shared/build/repo"
 
-	"github.com/drone/drone/plugin/deploy/deis"
-	"github.com/drone/drone/plugin/deploy/git"
-	"github.com/drone/drone/plugin/deploy/heroku"
-	"github.com/drone/drone/plugin/deploy/marathon"
-	"github.com/drone/drone/plugin/deploy/modulus"
-	"github.com/drone/drone/plugin/deploy/nodejitsu"
-	"github.com/drone/drone/plugin/deploy/tsuru"
+	"github.com/armab/drone/plugin/deploy/deis"
+	"github.com/armab/drone/plugin/deploy/git"
+	"github.com/armab/drone/plugin/deploy/heroku"
+	"github.com/armab/drone/plugin/deploy/marathon"
+	"github.com/armab/drone/plugin/deploy/modulus"
+	"github.com/armab/drone/plugin/deploy/nodejitsu"
+	"github.com/armab/drone/plugin/deploy/tsuru"
 )
 
 // Deploy stores the configuration details

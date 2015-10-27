@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/server/pubsub"
-	"github.com/drone/drone/server/worker"
+	"github.com/armab/drone/server/datastore"
+	"github.com/armab/drone/server/pubsub"
+	"github.com/armab/drone/server/worker"
 
 	"github.com/goji/context"
 	"github.com/gorilla/websocket"

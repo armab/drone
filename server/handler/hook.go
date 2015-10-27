@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/drone/drone/plugin/remote"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/server/worker"
-	"github.com/drone/drone/shared/build/script"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/plugin/remote"
+	"github.com/armab/drone/server/datastore"
+	"github.com/armab/drone/server/worker"
+	"github.com/armab/drone/shared/build/script"
+	"github.com/armab/drone/shared/httputil"
+	"github.com/armab/drone/shared/model"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

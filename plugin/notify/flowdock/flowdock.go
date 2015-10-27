@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 )
 
 const (

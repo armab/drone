@@ -3,7 +3,7 @@ package irc
 import (
 	"fmt"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 	"github.com/thoj/go-ircevent"
 )
 

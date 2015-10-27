@@ -2,7 +2,7 @@ package gitlab
 
 import (
 	"github.com/drone/config"
-	"github.com/drone/drone/plugin/remote"
+	"github.com/armab/drone/plugin/remote"
 )
 
 var (

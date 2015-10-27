@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/plugin/remote/github/oauth"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/plugin/remote/github/oauth"
+	"github.com/armab/drone/shared/httputil"
+	"github.com/armab/drone/shared/model"
 	"github.com/drone/go-github/github"
 )
 

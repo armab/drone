@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 	"github.com/gogits/go-gogs-client"
 )
 

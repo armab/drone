@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/drone/drone/server/session"
+	"github.com/armab/drone/server/session"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

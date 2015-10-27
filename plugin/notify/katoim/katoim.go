@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 )
 
 const (

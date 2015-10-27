@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/drone/drone/server/worker"
-	"github.com/drone/drone/server/worker/director"
-	"github.com/drone/drone/server/worker/docker"
-	"github.com/drone/drone/server/worker/pool"
+	"github.com/armab/drone/server/worker"
+	"github.com/armab/drone/server/worker/director"
+	"github.com/armab/drone/server/worker/docker"
+	"github.com/armab/drone/server/worker/pool"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

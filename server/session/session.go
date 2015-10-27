@@ -8,9 +8,9 @@ import (
 	"code.google.com/p/go.net/context"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/drone/config"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/server/datastore"
+	"github.com/armab/drone/shared/httputil"
+	"github.com/armab/drone/shared/model"
 	"github.com/gorilla/securecookie"
 )
 

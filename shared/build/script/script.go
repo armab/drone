@@ -6,12 +6,12 @@ import (
 
 	"gopkg.in/yaml.v1"
 
-	"github.com/drone/drone/plugin/deploy"
-	"github.com/drone/drone/plugin/notify"
-	"github.com/drone/drone/plugin/publish"
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/git"
-	"github.com/drone/drone/shared/build/repo"
+	"github.com/armab/drone/plugin/deploy"
+	"github.com/armab/drone/plugin/notify"
+	"github.com/armab/drone/plugin/publish"
+	"github.com/armab/drone/shared/build/buildfile"
+	"github.com/armab/drone/shared/build/git"
+	"github.com/armab/drone/shared/build/repo"
 )
 
 func ParseBuild(data string) (*Build, error) {

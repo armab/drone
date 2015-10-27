@@ -12,8 +12,8 @@ import (
 
 	"code.google.com/p/goauth2/oauth"
 	"github.com/Bugagazavr/go-gitlab-client"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/httputil"
+	"github.com/armab/drone/shared/model"
 )
 
 type Gitlab struct {

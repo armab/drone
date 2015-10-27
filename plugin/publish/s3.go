@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/drone/drone/plugin/condition"
-	"github.com/drone/drone/shared/build/buildfile"
+	"github.com/armab/drone/plugin/condition"
+	"github.com/armab/drone/shared/build/buildfile"
 )
 
 type S3 struct {

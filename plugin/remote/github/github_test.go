@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/drone/drone/plugin/remote/github/testdata"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/plugin/remote/github/testdata"
+	"github.com/armab/drone/shared/model"
 	"github.com/franela/goblin"
 )
 

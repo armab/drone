@@ -6,13 +6,13 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/drone/drone/plugin/notify/email"
-	"github.com/drone/drone/plugin/notify/flowdock"
-	"github.com/drone/drone/plugin/notify/github"
-	"github.com/drone/drone/plugin/notify/irc"
-	"github.com/drone/drone/plugin/notify/katoim"
-	"github.com/drone/drone/plugin/notify/webhook"
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/plugin/notify/email"
+	"github.com/armab/drone/plugin/notify/flowdock"
+	"github.com/armab/drone/plugin/notify/github"
+	"github.com/armab/drone/plugin/notify/irc"
+	"github.com/armab/drone/plugin/notify/katoim"
+	"github.com/armab/drone/plugin/notify/webhook"
+	"github.com/armab/drone/shared/model"
 )
 
 type Sender interface {

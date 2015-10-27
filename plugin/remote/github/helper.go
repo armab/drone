@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/drone/drone/plugin/remote/github/oauth"
+	"github.com/armab/drone/plugin/remote/github/oauth"
 	"github.com/google/go-github/github"
 	"github.com/gorilla/securecookie"
 )

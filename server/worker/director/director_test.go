@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"code.google.com/p/go.net/context"
-	"github.com/drone/drone/server/worker"
-	"github.com/drone/drone/server/worker/pool"
+	"github.com/armab/drone/server/worker"
+	"github.com/armab/drone/server/worker/pool"
 	"github.com/franela/goblin"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/armab/drone/shared/model"
 	"github.com/russross/meddler"
 )
 

@@ -3,7 +3,7 @@ package modulus
 import (
 	"testing"
 
-	"github.com/drone/drone/shared/build/buildfile"
+	"github.com/armab/drone/shared/build/buildfile"
 	"github.com/franela/goblin"
 )
 

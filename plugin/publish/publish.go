@@ -1,11 +1,11 @@
 package publish
 
 import (
-	"github.com/drone/drone/plugin/condition"
-	"github.com/drone/drone/plugin/publish/bintray"
-	"github.com/drone/drone/plugin/publish/npm"
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/repo"
+	"github.com/armab/drone/plugin/condition"
+	"github.com/armab/drone/plugin/publish/bintray"
+	"github.com/armab/drone/plugin/publish/npm"
+	"github.com/armab/drone/shared/build/buildfile"
+	"github.com/armab/drone/shared/build/repo"
 )
 
 // Publish stores the configuration details

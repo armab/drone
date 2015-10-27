@@ -13,7 +13,7 @@ import (
 // on GitHub, Bitbucket, etc.
 type Repo struct {
 	// The name of the Repository. This should be the
-	// canonical name, for example, github.com/drone/drone.
+	// canonical name, for example, github.com/armab/drone.
 	Name string
 
 	// The path of the Repoisotry. This could be
