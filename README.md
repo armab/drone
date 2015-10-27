@@ -29,20 +29,34 @@ there is no automated migration due to some fundamental structural changes. You 
 to start with a fresh instance.
 
 ## Installation
-
-**This is project is alpha stage. Consider yourself warned**
-
-We have optimized the installation process for Ubuntu since that is what we test with internally.
-You can run the following commands to quickly download an install Drone on an Ubuntu machine.
+Example install for Ubuntu
 
 ```sh
-# Ubuntu, Debian
-wget downloads.drone.io/master/drone.deb
-sudo dpkg -i drone.deb
+sudo apt-get update
 
-# CentOS, RedHat
-wget downloads.drone.io/master/drone.rpm
-sudo yum localinstall drone.rpm
+### Install Docker
+# needed for AUFS
+sudo apt-get -y install linux-image-extra-$(uname -r)
+sudo sh -c "wget -qO- https://get.docker.io/gpg | apt-key add -"
+sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+sudo apt-get update
+sudo apt-get -y install lxc-docker
+
+### Install Go
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+source /root/.gvm/scripts/gvm
+gvm listall
+gvm install go1.3
+gvm use go1.3
+
+### Build custom drone 0.3 from sources
+apt-get install -y mercurial zip libsqlite3-dev sqlite3
+git clone https://github.com/armab/drone.git $GOPATH/src/github.com/armab/drone
+cd $GOPATH/src/github.com/armab/drone
+
+make deps
+make build
+make install
 ```
 
 ## Database
