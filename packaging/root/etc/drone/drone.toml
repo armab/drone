@@ -33,6 +33,7 @@ datasource="/var/lib/drone/drone.sqlite"
 # secret=""
 # orgs=[]
 # open=false
+# status_context=Drone
 
 # [github_enterprise]
 # client=""

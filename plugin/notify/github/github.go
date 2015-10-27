@@ -1,3 +1,4 @@
+// See https://developer.github.com/v3/repos/statuses/
 package github
 
 import (
@@ -5,6 +6,7 @@ import (
 	"net/url"
 
 	"code.google.com/p/goauth2/oauth"
+	"github.com/drone/config"
 	"github.com/drone/drone/shared/model"
 	"github.com/google/go-github/github"
 )
@@ -31,6 +33,10 @@ const (
 
 const (
 	BaseURL = "https://api.github.com/"
+)
+
+var (
+	GithubStatusContext = config.String("github-status-context", "Drone")
 )
 
 type GitHub string
@@ -83,7 +89,7 @@ func send(rawurl, host, owner, repo, status, desc, target, ref, token string) er
 	}
 
 	data := github.RepoStatus{
-		Context:     github.String("Drone"),
+		Context:     github.String(*GithubStatusContext),
 		State:       github.String(status),
 		Description: github.String(desc),
 		TargetURL:   github.String(target),

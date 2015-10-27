@@ -102,6 +102,7 @@ client=""
 secret=""
 orgs=[]
 open=false
+status_context=Drone
 
 [github_enterprise]
 client=""
