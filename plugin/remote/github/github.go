@@ -8,6 +8,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/drone/config"
 	"github.com/armab/drone/plugin/remote/github/oauth"
 	"github.com/armab/drone/shared/httputil"
 	"github.com/armab/drone/shared/model"
@@ -18,6 +19,10 @@ const (
 	DefaultAPI   = "https://api.github.com/"
 	DefaultURL   = "https://github.com"
 	DefaultScope = "repo,repo:status,user:email"
+)
+
+var (
+	BuildConfigFile = config.String("server-file", ".drone.yml")
 )
 
 type GitHub struct {
@@ -191,7 +196,7 @@ func (r *GitHub) GetRepos(user *model.User) ([]*model.Repo, error) {
 // repository and returns in string format.
 func (r *GitHub) GetScript(user *model.User, repo *model.Repo, hook *model.Hook) ([]byte, error) {
 	var client = NewClient(r.API, user.Access, r.SkipVerify)
-	return GetFile(client, repo.Owner, repo.Name, ".drone.yml", hook.Sha)
+	return GetFile(client, repo.Owner, repo.Name, *BuildConfigFile, hook.Sha)
 }
 
 // Deactivate removes a repository by removing all the post-commit hooks

@@ -84,6 +84,7 @@ You can find the current config of the master branch [here](https://github.com/a
 
 [server]
 port=""
+file=".drone.yml"
 
 [server.ssl]
 key=""
