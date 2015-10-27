@@ -21,6 +21,7 @@ import (
 	"github.com/zenazn/goji/web"
 
 	_ "github.com/drone/drone/plugin/notify/email"
+	_ "github.com/drone/drone/plugin/notify/github"
 	"github.com/drone/drone/plugin/remote/bitbucket"
 	"github.com/drone/drone/plugin/remote/github"
 	"github.com/drone/drone/plugin/remote/gitlab"
